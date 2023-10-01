@@ -1,0 +1,322 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+header::before{
+    content: "";
+    margin-bottom: 6rem;
+}
+nav{
+    display: flex;
+    justify-content: end;
+}
+img{
+    position: absolute; height: 10rem;top:0x; left:4rem; opacity: 85%;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    width: 60rem;
+
+}
+li{
+    font-family: 'Roboto Slab', serif;;
+    color: white;
+    font-size: larger;
+    padding: 1rem;
+}
+.salad-img{
+    height: 80vh;
+    width: 100%;   
+    display: flex;
+    flex-direction: column;
+}
+.salad-img::before{
+    content: "";
+    background-image: url(./images/brenda-godinez-_Zn_7FzoL1w-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    z-index: -1;
+    opacity: 90%;
+
+}
+.head{
+    font-family: 'Oswald', sans-serif;
+    font-size: 8rem;
+    color: white;
+    text-shadow:green;
+    margin-top: 0;
+
+}
+.hero{
+    text-align: center;
+    margin-top: 24vh;
+}
+.slogan{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: white;
+    text-shadow: black;
+
+}
+.see-more{
+    color: white;
+    font-weight: 700;
+    
+}
+
+.info{
+    padding-top: 2rem;
+    height: 100vh;
+    background-color: #FBF8F2;
+    display: flex;
+    flex-direction: column;
+}
+.info-head{
+    color: red;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Libre Baskerville', serif;
+}
+p{
+   
+    text-align: center;
+    color: #BA8827;
+    font-weight: 600;
+}
+.min-order{
+    text-align: center;
+    color: red;
+    font-weight: 700;
+}
+.branches{
+    margin-top: 2rem;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 6rem;
+    justify-content: center;
+}
+.branch-container{
+    width: 350px;
+    height: 250px;
+    border:solid white;
+    border-radius: 10px;
+    background-color: #EDE9D7;
+    text-align: center;
+    
+}
+.branch{
+    font-size: 2rem;
+    color: red;
+    font-weight: 500;
+    font-family: 'Teko', sans-serif;
+}
+.num{
+    font-size: 2rem;
+    color: red;
+    font-weight: 500;   
+    font-family: 'Teko', sans-serif; 
+}
+.address{
+    font-family: 'Libre Baskerville', serif;
+    color: gray;
+}
+.store-hours{
+    color: #BA8827;
+    font-weight: 600;
+}
+.hours{
+    color: gray;
+    font-weight: 500;
+    font-weight: 700;
+}
+.special-offers{
+    height: 50vh;
+
+}
+.special-offers{
+    background-color: rgba(231, 231, 231, 0.548);
+
+  
+}
+.offers-head{
+    text-align: center;
+    padding: 1%;
+    background-color: red;
+    margin-bottom: 2rem;
+    color:#BA8827;
+    font-family: 'Teko', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    width: 20%;
+    margin-left: 40%;
+}
+.offer-container{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    align-items: center;
+}
+.menu-container{
+    height: 13rem;
+    width: 17rem;
+    
+}
+.offer{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    background-color: red;
+    color: white;
+    height: 3rem;
+    text-align: center;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+    font-size: 1.25rem;
+    
+    
+}
+img{
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
+}
+.menu-banner{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-banner::before{
+    content:"";
+    background-image: url(./images/lily-banse--YHSwy6uqvk-unsplash.jpg);
+    background-size:cover ;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    z-index: -5;
+    opacity: 80%;
+
+}
+.menu{
+    font-family: 'Oswald', sans-serif;
+    font-size: 8rem;
+    color: white;
+    text-shadow:green;
+   
+}
+@media (max-width:1400px){
+    li{
+        font-size: .7rem;
+    }
+    img{
+        scale: 0;
+    }
+    .salad-img::before{
+        background-position: center;
+    }
+    .head{
+        font-size: 3rem;
+    }
+    .slogan{
+        font-size: 2rem;
+    }
+    
+    .branches{
+        column-gap: 0;
+        flex-direction: row;
+        display: flex;
+        gap: 2rem;
+       
+    }
+    .branch-container{
+        width: 224px;
+        height: 140px;
+        
+        
+    }
+    .branch{
+        font-size:18px;
+    }
+    .address{
+        font-size: 9px;
+        margin: 0;
+    }
+    .hours{
+        margin: 0;
+        font-size: 9px;
+    }
+    .num{
+        margin: 0;
+        font-size: 18px;
+    }
+    .store-hours{
+        font-size: 18px;
+    }
+}
+@media (max-width:735px){
+    .branch-container{
+        width: 190px;
+        height: 145px;
+    }
+}
+@media(max-width:375px){
+    .info{
+        height: 115vh;
+    }
+    .branch-container{
+        gap: 0;
+        margin: 0;
+        width: 140px;
+        height: 130px;
+    }
+    .branch{
+        font-size:18px;
+    }
+    .address{
+        font-size: 9px;
+        margin: 0;
+    }
+    .hours{
+        margin: 0;
+        font-size: 6.8px;
+    }
+    .num{
+        margin: 0;
+        font-size: 18px;
+    }
+    .store-hours{
+      font-size: 9px;
+    }
+}
+@media(max-width:370px){
+    .salad-img{
+        height: 70vh;
+    }
+    .salad-img::before{
+        height: 70vh;
+    }
+    .info-head{
+        font-size: 1.5em;
+    }
+    li{
+        font-size: 0.58rem;
+        margin: 0;
+    }
+    .branches{
+        display: flex;
+        grid-template-columns: 2;
+    }
+    .branch-container{
+        width:120px;
+        height: max-content ;
+    }
+    .menu{
+        font-size:4rem ;
+    }
+}
